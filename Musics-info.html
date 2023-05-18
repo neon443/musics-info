@@ -1,0 +1,124 @@
+<html>
+	<head>
+		<title>Music infos</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<style>
+		.imgContainer {
+			width: 50%;
+			display: block;
+			position: relative;
+		}
+		.imgContainer .fgImg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			z-index: 2;
+			transition: all 1s;
+			transform: scale(0.9);
+			border-radius: 10%;
+		}
+		.imgContainer .bgImg {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			position: absolute;
+			top: 40px;
+			left: 40px;
+			transition: all 0.75s;
+			z-index: 1;
+			border-radius: 10%;
+			filter: blur(10px);
+		}
+		* {
+			box-sizing: border-box;
+		}
+		b{color:#007AFF}
+		body{
+			background-color: #f2f2f2;
+			color:#333333;
+			font-family: system-ui;
+			margin: auto;
+			overflow-x: hidden;
+		}
+		p{
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+		h1{
+			font-size: 45px;
+			font-weight: 800;
+			background: linear-gradient (to bottom left, #d69833, #d38f24);
+		}
+		h2{
+			font-size: 30px;
+			font-weight:300;
+			margin-top:-38;
+		}
+		@media (prefers-color-scheme: dark) {
+			body {
+				background-color:#1C1C1E;
+				color: #f1f1f1;
+			}
+			#transaction {
+				background-color: #191919;
+				box-shadow: none;
+			}
+			p{
+				color: #AAAAAA;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.ingContainer{
+				align: center;
+				width: 100%;
+				border-radius: 10%;
+			}
+			p{
+				width: 100%;
+				position: static;
+				text-align: center;
+			}
+		}
+	</style>
+	<div class="imgContainer">
+		<!<img class="fgImg" src="data:image/jpeg;base64,">
+		<!<img class="bgImg" src="data:image/jpeg;base64,">
+		<img class="fgImg" src="art-sml.png">
+		<img class="bgImg" src="art-sml.png">
+	</div>
+	<body>
+		<p>
+			Title: <b>
+			chemical plant zone</b><br>
+			
+			Album: <b>
+			sonic mania reowroked</b><br>
+			
+			By <b>
+			Mykah</b><br>
+			
+			Volume: <b>
+			100%</b><br>
+
+			Genre <b>
+			LoFi VMG</b><br>
+			
+			Duration <b>
+			3:20</b><br>
+			
+			Kind <b>
+			MP3 320bkps</b><br>
+			
+			<b>10</b> play
+			
+			<b>2</b> skip
+		</p>
+	</body>	
+</html>
