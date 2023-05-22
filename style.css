@@ -1,48 +1,46 @@
 .imgContainer {
 	width: 50%;
 	display: block;
-	position: relative;
 }
 .imgContainer .fgImg {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	position: absolute;
 	top: 40px;
 	left: 40px;
 	z-index: 2;
-	transition: all 1s;
-	transform: scale(0.9);
 	border-radius: 10%;
 }
 .imgContainer .bgImg {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	position: absolute;
+	border-radius: 10%;
 	top: 40px;
 	left: 40px;
-	transition: all 0.75s;
 	z-index: 1;
-	border-radius: 10%;
+	opacity: 1;
 	filter: blur(10px);
+	animation-name: glowShadow;
+	animation-duration: 1s;
+	animation-delay: -0.01s;
+	transform: scale(1.1, 1.1)
 }
 * {
 	box-sizing: border-box;
+	margin: 0;
 }
-b{color:#007AFF}
+b{
+	color:#007AFF
+}
 body{
 	background-color: #f2f2f2;
 	color:#262626;
 	font-family: system-ui;
-	margin: auto;
 	overflow-x: hidden;
 }
 p{
 	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
+	width: 50%;
+	float: right;
 }
 h1{
 	font-size: 45px;
@@ -51,7 +49,10 @@ h1{
 h2{
 	font-size: 30px;
 	font-weight:300;
-	margin-top:-38;
+}
+@keyframes glowShadow {
+	10% {opacity: 0; transform: scale(1,1);}
+	100% {opacity: 1; transform: scale(1.1,1.1);}
 }
 @media (prefers-color-scheme: dark) {
 	body {
